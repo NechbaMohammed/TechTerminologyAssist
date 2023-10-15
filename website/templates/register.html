@@ -1,0 +1,72 @@
+{% extends "base.html" %}{% block title%} register{%endblock%}
+{%block content%}
+
+                <div id="login" class="signin-card">
+                  <div class="logo-image">
+                  <h2 class="title" align="center">ADD <span style="color:#0CDAF0">A</span> NEW <span style="color:#0CDAF0">USER</span> </h2>
+
+                  </div>
+                  <p>
+                    <span class="invalid-feedback" role="alert">
+                    </span>
+                </p>
+                    <form method="POST" action="">
+
+                        <div id="form-login-username " class="form-group my-2">
+                            <label for="email" class="float-label">Email</label>
+                            <input id="email" class="form-control" name="email" type="text" size="18" alt="email" required placeholder="Enter email" />
+                            <span class="form-highlight"></span>
+                            <span class="form-bar"></span>
+                        </div>
+                        <div id="form-login-username " class="form-group my-2">
+                            <label for="name" class="float-label">Name</label>
+                            <input id="name" class="form-control" name="name" type="text" size="18" alt="name" required placeholder="Enter name" />
+                            <span class="form-highlight"></span>
+                            <span class="form-bar"></span>
+                        </div>
+                        <div id="form-login-username " class="form-group my-2">
+                            <label for="role" class="float-label">Role</label>
+                            <select id="role" class="form-control" name="role" type="text" alt="role" required >
+                            <option value="0">Admin</option>
+                            <option value="1">User</option>
+                             </select>
+                            <span class="form-highlight"></span>
+                            <span class="form-bar"></span>
+                        </div>
+
+                        <div id="form-login-username" class="form-group my-2">
+                            <label for="password1" class="float-label">Password</label>
+                            <input id="password1" class="form-control"  name="password1" type="password" size="18" alt="password1" required autocomplete="current-password" placeholder="Enter password" />
+                            <span class="form-highlight"></span>
+                            <span class="form-bar"></span>
+                            <span class="invalid-feedback" role="alert">
+                            </span>
+                        </div>
+                        <div id="form-login-username" class="form-group my-2">
+                            <label for="password2" class="float-label">Password (Confirm)</label>
+                            <input id="password2" class="form-control"  name="password2" type="password" size="18" alt="password" required autocomplete="current-password" PLACEHOLDER="Confirm password"/>
+                            <span class="form-highlight"></span>
+                            <span class="form-bar"></span>
+                            <span class="invalid-feedback" role="alert">
+                            </span>
+                        </div>
+
+
+
+                        <div id="form-login-username" class="form-group row">
+                            <div class="col-md-12">
+                                <div class="#">
+                                    <button
+                                        class="btn btn-block btn-info ripple-effect mt-3 text-light col-md-12"
+                                        type="submit"
+                                        name="Submit"
+                                        alt="sign in">
+                                       Register
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+{% endblock%}

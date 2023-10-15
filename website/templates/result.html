@@ -1,0 +1,18 @@
+{% extends "base.html" %}{% block title%} Result{%endblock%}
+{%block content%}
+
+<div class="container" style=" margin-right:100px;">
+<h1 style="margin-top:8px" align="center">Computer words and their definition</h1>
+<br>
+    {% for item in dic %}
+
+    <h1 style="font-size: 1.8em;;font-family: 'Linux Libertine','Georgia','Times',serif;line-height: 1.3;"> {{item[2]}}</h1>
+        <hr>
+    <p > {{item[0]}} <a href="{{item[1]}}"  target="_blank" class="nav-item nav-link">Voir détail</a></p>
+    <br>
+
+    {%endfor %}
+     {{ pagination.links }}
+</div>
+
+{%endblock%}

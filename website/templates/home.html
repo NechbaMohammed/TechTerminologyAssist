@@ -1,0 +1,29 @@
+{% extends "base.html" %}{% block title%} Home{%endblock%}
+{%block content%}
+<div >
+
+<h1 style="font-size: 38px;line-height: 44px;letter-spacing: 0;font-weight: 600;color: #383e45;" class="text-center mt-4" >Analyser le fichier PDF ou WORD</h1>
+<br>
+  <div class="container text-center mb-5 col-8" style="font-size:25px;">
+  Avez-vous des difficultés à comprendre des mots techniques vous êtes au bon endroit, il vous suffit de sélectionner un fichier <span style="color:#0CDAF0;font-family:verdana">(word ou pdf)</span> et laisser nous nous occuper de tout le reste
+  </div>
+
+<div class="upload" align="center">
+ <form id="form" method="POST" action="/" enctype="multipart/form-data" >
+<input type="file" name="file"  class="btn-warning" >
+<br><br>
+
+
+    <button  class="btn btn-primary btn-info text-light" id="upload">Upload file</button>
+    <button type="submit" style="display:none"></button>
+    </form>
+    </div>
+<div id="foo" style="margin-top:53px;display:none"></div>
+
+</div>
+ <script  src="../static/js/spin2.js"></script>
+{%block spiner%}
+  <script  src="../static/js/spin.js"></script>
+
+{%endblock%}
+{%endblock%}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}{% block title%} login{%endblock%}
+{%block content%}
+
+                <div id="login" class="signin-card">
+                  <div class="logo-image">
+                    <img class="img-fluid" src="../static/images/logo2.jpg" alt="LOGO">
+                  </div>
+                  <p>
+                    <span class="invalid-feedback" role="alert">
+                    </span>
+                </p>
+                    <form method="POST" >
+                        <div id="form-login-username " class="form-group my-2">
+                            <label for="email" class="float-label">Email</label>
+                            <input id="email" class="form-control" name="email" type="text" size="18" alt="login" placeholder="Enter email" required />
+                            <span class="form-highlight"></span>
+                            <span class="form-bar"></span>
+                        </div>
+
+                        <div id="form-login-username" class="form-group my-2">
+                            <label for="password" class="float-label">Password</label>
+                            <input id="password" class="form-control"  name="password" type="password" size="18" alt="password" required autocomplete="current-password" placeholder="Enter password" />
+                            <span class="form-highlight"></span>
+                            <span class="form-bar"></span>
+                            <span class="invalid-feedback" role="alert">
+                            </span>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input"style="" type="checkbox" name="remember"
+                                        id="remember">
+                                    <label class="form-check-label" style="font-size:small;" for="remember" >
+                                    Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="form-login-username" class="form-group row">
+                            <div class="col-md-12">
+                                <div class="container">
+                                    <button
+                                        class="btn btn-block btn-info ripple-effect mt-3 text-light col-md-12"
+                                        type="submit"
+                                        name="Submit"
+                                        alt="sign in">
+                                       Login
+                                    </button>
+                                </div>
+                                    <a class="btn btn-link" style="font-size:small;display:none" href="##">
+                                        Forgot Your Password?
+                                    </a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+{%endblock%}
