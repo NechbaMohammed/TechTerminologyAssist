@@ -48,7 +48,7 @@ We have created a video demonstration to showcase how to use "TechTerminologyAss
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.txt).
+This project is licensed under the [MIT License](LICENSE).
 
 Feel free to explore our application and provide us with your feedback and suggestions. We hope that "TechTerminologyAssist" simplifies the understanding of technical financial reports for public finance professionals.
 
